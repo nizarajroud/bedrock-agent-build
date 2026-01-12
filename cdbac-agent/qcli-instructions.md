@@ -24,17 +24,17 @@ Instruction- :
 
     Create this metadata:
     AMAZON_BEDROCK_METADATA : text, false
-    AMAZON_BEDROCK_METADATA: text, true
     AMAZON_BEDROCK_TEXT_CHUNK : text, true
     id: text, true
     x-amz-bedrock-kb-data-source-id: text, true
     x-amz-bedrock-kb-source-file-modality: text, true
     x-amz-bedrock-kb-source-uri: text, true
 
+From AWS console , DIY:
+    Create a Bedrock knowledge base named cdbac-kb that uses the recently created data collection (including index and Vector configuration),
+    Use this Metadata field mapping:
+        Text field name : AMAZON_BEDROCK_TEXT_CHUNK
+        Bedrock-managed metadata field name: AMAZON_BEDROCK_METADATA
 Instruction- :
-    check again if AMAZON_BEDROCK_METADATA filtrable=false
-Instruction- :
-Create a Bedrock knowledge base named cdbac-kb In a similar technical configuration as ctx-kb knowledge base that is connected to an s3 bucket (cdbac-data)as data source in ca-central-1 (don't touch to any aconfiguration on ctx-kb)
-
-already on ca-central-1, Create a Bedrock agent named cdbac-agent that uses Claude Sonnet 4.5 model, For agent instructions, use  Instructions-for-the-Agent.md file content 
-add cdbac-kb knowledge base to the agent
+    already on ca-central-1, Create a Bedrock agent named cdbac-agent that uses Claude Sonnet 4.5 model, For agent instructions, use  Instructions-for-the-Agent.md file content 
+    add cdbac-kb knowledge base to the agent
