@@ -44,4 +44,16 @@ Instruction- :
 
 From AWS console , DIY:
     for cdbac-agent :select model : (uncheck Bedrock Agents optimized) use category anthropic, model Claude Sonnet 4.5 v1 and inference profile = US Anthropic Claude Sonnet 4.5
+    Save
+    prepare
 
+Instruction- :
+    Already in ca-central-1, create a Lambda function named cdbac-kb-sync that:
+        uses code from kb_sync_lambda.py file name 
+        Configure environment variables KNOWLEDGE_BASE_ID and DATA_SOURCE_ID with the values for cdbac-kb and its data source  respectively
+        Configure the Lambda function to be triggered by s3 event notification (named cdbac-kb-auto-sync-trigger)on cdbac-data S3 bucket for All object create events
+Instruction- :
+    Already in ca-central-1, create a Lambda function named cdbac-mp3-transcribe-function that:
+        uses code from kb_sync_lambda.py file name 
+        Configure environment variables KNOWLEDGE_BASE_ID and DATA_SOURCE_ID with the values for cdbac-kb and its data source  respectively
+        Configure the Lambda function to be triggered by s3 event notification (named cdbac-kb-auto-sync-trigger)on cdbac-data S3 bucket for All object create events
