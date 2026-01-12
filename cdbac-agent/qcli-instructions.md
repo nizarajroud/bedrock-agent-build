@@ -42,8 +42,6 @@ Instruction- :
     Instructions for the Agent : use  Instructions-for-the-Agent.md file content
     Knowledge Bases : cdbac-kb knowledge base
 
+From AWS console , DIY:
+    for cdbac-agent :select model : (uncheck Bedrock Agents optimized) use category anthropic, model Claude Sonnet 4.5 v1 and inference profile = US Anthropic Claude Sonnet 4.5
 
-     that uses Claude Sonnet 4.5 model, For agent instructions, use  Instructions-for-the-Agent.md file content 
-    add cdbac-kb knowledge base to the agent
-
-    for cdbac-agent agent  model selection: use category anthropic, model Claude Sonnet 4.5 v1 and inference profile = US Anthropic Claude Sonnet 4.5
