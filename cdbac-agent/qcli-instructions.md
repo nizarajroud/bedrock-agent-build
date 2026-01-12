@@ -36,5 +36,14 @@ From AWS console , DIY:
         Text field name : AMAZON_BEDROCK_TEXT_CHUNK
         Bedrock-managed metadata field name: AMAZON_BEDROCK_METADATA
 Instruction- :
-    already on ca-central-1, Create a Bedrock agent named cdbac-agent that uses Claude Sonnet 4.5 model, For agent instructions, use  Instructions-for-the-Agent.md file content 
+    already on ca-central-1, Create a Bedrock agent 
+    name: cdbac-agent
+    model : use category anthropic, model Claude Sonnet 4.5 v1 and inference profile = US Anthropic Claude Sonnet 4.5
+    Instructions for the Agent : use  Instructions-for-the-Agent.md file content
+    Knowledge Bases : cdbac-kb knowledge base
+
+
+     that uses Claude Sonnet 4.5 model, For agent instructions, use  Instructions-for-the-Agent.md file content 
     add cdbac-kb knowledge base to the agent
+
+    for cdbac-agent agent  model selection: use category anthropic, model Claude Sonnet 4.5 v1 and inference profile = US Anthropic Claude Sonnet 4.5

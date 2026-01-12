@@ -1,5 +1,3 @@
-Based on the email context, here are clear and specific instructions for a Bedrock Agent:
-
 ## Agent Instructions: CDBAC System Migration Quotation Assistant
 
 ### Primary Objective
